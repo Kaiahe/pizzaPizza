@@ -1,0 +1,131 @@
+.confirmation-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    padding: 50px;
+    
+  }
+  .confirmation-box{
+    grid-column: 2/4;
+    grid-row:1;
+    border: 2px solid rgb(	107, 112, 92);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    
+    
+  }
+  .confirmation-box>h1{
+    font-size: 50px;
+  }
+  .checkbox-container{
+    
+    position: relative;
+    left: 40%;
+  }
+  label{
+    position: relative;
+    display: inline-block;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    border-left-color: #5cb85c;
+    height: 125px;
+    width: 125px;
+  
+  }
+  
+  label .check-icon:after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 28px;
+    transform: scaleX(-1) rotate(135deg);
+    height: 56px;
+    width: 28px;
+    border-top: 4px solid #5cb85c;
+    border-right: 4px solid #5cb85c;
+    transform-origin: left top;
+    animation: check-icon 1.8s ease;
+  }
+  @keyframes check-icon {
+    0%{
+      height: 0;
+      width: 0;
+      opacity: 1;
+    }
+    20%{
+      height: 0;
+      width: 28px;
+      opacity: 1;
+    }
+    40%{
+      height: 56px;
+      width: 28px;
+      opacity: 1;
+    }
+    100%{
+      height: 56px;
+      width: 28px;
+      opacity: 1;
+    }
+  }
+  input{
+    display: none;
+  }
+  
+  input:checked + label{
+    display: block;
+    animation: none;
+    border-color: #5cb85c;
+    transition: border 0.5s ease-out;
+  }
+
+    /*Confirmation page Media Queries, from Desktop first*/
+  
+    @media (max-width: 970px){
+
+      .confirmation-box{
+        grid-column: 1/5;
+        grid-row:1;
+        border: 2px solid rgb(	107, 112, 92);
+        text-align: center;
+        padding: 30px;
+        margin: 10px;
+        
+        
+      }
+      .checkbox-container{
+    
+        position: relative;
+        left: 40%;
+      }
+     
+    }
+
+    @media (max-width: 576px){
+
+      .confirmation-box{
+        grid-column: 1/5;
+        grid-row:1;
+        border: 2px solid rgb(	107, 112, 92);
+        text-align: center;
+        padding: 30px;
+        margin: 10px;
+        
+        
+      }
+
+      .confirmation-box>h1{
+        font-size: 20px;
+      }
+      .confirmation-box>p{
+        font-size: small;
+      }
+
+      .checkbox-container{
+    
+        position: relative;
+        left: 33%;
+      }
+
+    }

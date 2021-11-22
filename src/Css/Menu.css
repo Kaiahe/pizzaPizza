@@ -1,0 +1,134 @@
+.item-title{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.item-price{
+    font-size: 20px;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 5rem;
+    align-items: center;
+    margin: 3rem auto;
+    width: 80%;
+    padding-top: 40px; 
+    transition: ease-in;
+    
+    
+}
+.item-container{
+    /*display: grid;*/
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.buttons-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    margin: auto;
+    width: 70%;
+    padding-top: 50px;
+    
+}
+.btn{
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    color: #ae2012;
+    opacity: 50%;
+    
+}
+.menu-img{
+   /* display: grid;*/
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+ .btn:active, button:focus{
+    opacity: 100%;
+    transition: 0.5s ease-in;
+} 
+
+.add-btn{
+    height: 40%;
+    width: 100%;
+    /*display: grid;*/
+    border: none;
+    border-radius: 15px;
+    background-color: #a4ac86;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+.add-btn:hover{
+    background-color: rgb(199, 199, 184);
+}
+
+  /*Menu page Media Queries, from Desktop first*/
+  
+  @media (max-width: 970px){
+    .item{
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-gap: 5rem;
+        align-items: center;
+        margin: 3rem auto;
+        width: 50%;
+        padding: 40px; 
+        transition: ease-in;
+        
+        
+    }
+  }
+
+  @media (max-width: 576px){
+    .item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-gap: 5rem;
+        align-items: center;
+        margin: 3rem auto;
+        width: 50%;
+        padding: 40px; 
+        transition: ease-in;
+        
+        
+    }
+    .btn{
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 0 10px;
+        background-color: white;
+        text-align: center;
+        font-weight: bold;
+        color: #ae2012;
+        opacity: 50%;
+        
+    }
+    .item-title{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .item-price{
+        font-size: 10px;
+    }
+    .add-btn{
+        height: 40%;
+        width: 50%;
+       
+       
+    }
+  }

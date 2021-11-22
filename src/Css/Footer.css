@@ -1,0 +1,43 @@
+/*Footer*/
+.main-footer{
+    color: white;
+    background-color: rgb(	221, 190, 169);
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+  }
+  .list-unstyled {
+    list-style: none;
+  }
+  .col {
+    display: inline-block;
+  }
+  .col>h4{
+    padding-left: 35px;
+  }
+  .row{
+    padding-left: 30px;
+  }
+
+  /*Footer page Media Queries, from Desktop first*/
+  @media (max-width: 970px){
+  
+    .col{
+      font-size: 70%;
+    }
+    .col-sm{
+      font-size: 70%;
+    }
+  }
+
+  @media (max-width: 576px){
+  
+    .col{
+      font-size: 20%;
+    }
+    .col-sm{
+      font-size: 40%;
+    }
+  }

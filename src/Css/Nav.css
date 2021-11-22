@@ -1,0 +1,140 @@
+/*Navbar*/
+.nav-main{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-height: 15vh;
+    background: rgb(165, 165, 141);
+    box-shadow: 5px 5px 5px rgb(199, 199, 184);
+  }
+  .menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: black;
+  }
+  .icon-nav{
+    position: absolute;
+    left: 3%;
+    top: 6%;
+  }
+  .nav-menu {
+    background-color:rgb(165, 165, 141);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+  }
+  .nav-menu.active{
+    left: 0;
+    transition: 350ms;
+  }
+  .nav-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 16px 8px;
+    list-style: none;
+    height: 60px;
+  }
+  .nav-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+  .nav-text a:hover{
+  background-color: rgb(199, 199, 184);
+  }
+  .nav-menu-items{
+    width: 100%;
+  
+  }
+  .navbar-toggle{
+    background-color: rgb(165, 165, 141);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  span{
+    margin-left: 16px;
+  }
+  
+  .nav-links{
+    width: 80%;
+    list-style: none;
+  }
+  #images-logo{
+    width: 250px;
+    position: absolute;
+    right: 42%;
+    top: 3%;
+  
+  }
+  
+  #images-shopping {
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  
+  
+  }
+  .cart-counter{
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+  /*Nav page Media Queries, from Desktop first*/
+  
+  @media (max-width: 970px){
+    #images-logo{
+      width: 210px;
+      position: absolute;
+      left: 40%;
+      top: 3%;
+    
+    }
+  }
+  
+  @media (max-width: 576px){
+    .nav-menu {
+      background-color:rgb(165, 165, 141);
+      width: 200px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: 850ms;
+    }
+
+    #images-shopping {
+      width: 10%;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+    
+    
+    }
+    #images-logo{
+      width: 40%;
+      position: absolute;
+      left: 35%;
+      top: 3%;
+    
+    }
+  }
